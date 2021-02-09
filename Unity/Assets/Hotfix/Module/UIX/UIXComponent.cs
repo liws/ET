@@ -11,8 +11,8 @@ namespace ETHotfix
     {
         public override void Awake(UIXComponent self)
         {
-            self.GameObjectCamera = Component.Global.transform.Find("UICamera").gameObject;
-            self.Camera = self.GameObjectCamera.GetComponent<Camera>();
+            self.CameraGO = Component.Global.transform.Find("UICamera").gameObject;
+            self.Camera = self.CameraGO.GetComponent<Camera>();
         }
     }
     
@@ -22,7 +22,7 @@ namespace ETHotfix
         private readonly Dictionary<string, UIX> closedUIs = new Dictionary<string, UIX>();//todo:pool manager
         //todo:uigroup
 
-        public GameObject GameObjectCamera;
+        public GameObject CameraGO;
         public Camera Camera;
         
         public async ETTask OpenUI<T>(string name) where T : UIXFormBase
