@@ -38,6 +38,9 @@ namespace ETHotfix
 				UnitConfig unitConfig = (UnitConfig)Game.Scene.GetComponent<ConfigComponent>().Get(typeof(UnitConfig), 1001);
 				Log.Debug($"config {JsonHelper.ToJson(unitConfig)}");
 
+                BundleConfig bundleCofnig = (BundleConfig) Game.Scene.GetComponent<ConfigComponent>().Get(typeof (BundleConfig), 1);
+                Log.Debug($"bundleConfig {JsonHelper.ToJson(bundleCofnig)}");
+                
 				Game.EventSystem.Run(EventIdType.InitSceneStart);
 			}
 			catch (Exception e)

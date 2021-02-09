@@ -333,7 +333,8 @@ namespace ETModel
 				foreach (UnityEngine.Object asset in assets)
 				{
 					AddResource(assetBundleName, asset.name, asset);
-				}
+                    Debug.Log($"assetName = {asset.name} ,bundleName = {assetBundleName}");
+                }
 			}
 
 			abInfo = ComponentFactory.CreateWithParent<ABInfo, string, AssetBundle>(this, assetBundleName, assetBundle);

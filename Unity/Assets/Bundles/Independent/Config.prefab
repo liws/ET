@@ -48,3 +48,5 @@ MonoBehaviour:
     gameObject: {fileID: 4900000, guid: 0f3540faabf2b7e4c83e81cb7ba6a096, type: 3}
   - key: UnitConfig
     gameObject: {fileID: 4900000, guid: c245c7dda13b3ad43b2278925e922899, type: 3}
+  - key: BundleConfig
+    gameObject: {fileID: 4900000, guid: 8678ca53ffc9b2e44ba0191c55732ca3, type: 3}
